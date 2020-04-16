@@ -170,36 +170,25 @@ $(function() {
 
                 // shows the large image that is associated to the $item
 
-
                 $items.removeClass('selected');
                 $item.addClass('selected');
 
                 var $thumb = $item.find('img'),
                     largesrc = $thumb.data('large'),
-                    title = $thumb.data('description');
+                    $desc = $item.find('div.data'),
+                    header = $desc.data('header')
 
-                var $desc = $item.find('div.desc'),
-                    $header = $desc.find('h3'),
-                    $content = $desc.find('p'),
-                    $url = $desc.find('a')
 
-                $('<img/>').load(function() {
-
+                $('<img/>').load(function(event) {
                     $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
 
-                    if ($desc)
-                        $rgGallery.find('div.rg-caption').show().children('div').empty().html({ $header, $content, $url });
-
-                    if (mode === 'carousel') {
-                        $esCarousel.elastislide('reload');
-                        $esCarousel.elastislide('setCurrent', current);
-                    }
+                    if (header)
+                        $rgGallery.find('div.rg-caption').show().children('h3').empty().text(header);
 
                     anim = false;
 
                 }).attr('src', largesrc);
-                if ($desc)
-                    $rgGallery.find('div.rg-caption').show().children('div').empty().text($desc);
+
             },
             addItems = function($new) {
 
