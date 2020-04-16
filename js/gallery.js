@@ -176,18 +176,31 @@ $(function() {
                 var $thumb = $item.find('img'),
                     largesrc = $thumb.data('large'),
                     $desc = $item.find('div.data'),
-                    header = $desc.data('header')
+                    header = $desc.find('h3').text(),
+                    content = $desc.find('p').text(),
+                    linkURL = $desc.find('a.link').attr('href'),
+                    linkTxt = $desc.find('a.link').text()
 
+                var description =
+                    '<h3>' + header + '</h3>' +
+                    '<p>' + content + '</p>' +
+                    '<a class="btn btn-secondary" href="' + linkURL + '">' + linkTxt + '</a>';
 
-                $('<img/>').load(function(event) {
+                $('<img/>').load(function() {
                     $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
 
-                    if (header)
-                        $rgGallery.find('div.rg-caption').show().children('h3').empty().text(header);
+                    if ($desc.length > 0) {
+                        $rgGallery.find('div.rg-image').css("float", "left");
+                        $rgGallery.find('div.rg-caption').show().empty().append('<div class="description">' + description + '</div>');
+                    } else {
+                        $rgGallery.find('div.rg-image').css({ "float": "none", "margin": "auto" });
+                        $rgGallery.find('div.rg-caption').show().empty();
+                    }
 
                     anim = false;
 
                 }).attr('src', largesrc);
+
 
             },
             addItems = function($new) {
