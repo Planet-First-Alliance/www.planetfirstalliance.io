@@ -2,25 +2,23 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- CSS dependencies -->
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
-    <link rel="stylesheet" href="theme.css" type="text/css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/map_points.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet" />
-    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <script src="js/navbar-ontop.js"></script>
-    <script src="js/animate-in.js"></script>
-    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
-        <div class="rg-image-wrapper">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/elastislide.css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/map_points.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <script src="js/animate-in.js"></script>
+  <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl"> <div class="rg-image-wrapper">
             <div class="rg-image"></div>
             <div class="rg-caption-wrapper">
                 <div class="rg-caption" style="display:none;"></div>
@@ -28,230 +26,324 @@
         </div>
         <div class="clearfix"></div>
     </script>
+  <style> .rg-caption .description {
+            display: inline-block;
+            width: 50%;
+        }
+        
+        .home_page_banner {
+            background: #fcfcfc;
+        }
+        
+        .es-carousel-wrapper {
+            display: none;
+        }
+        
+        .es-carousel-wrapper {
+            background: transparent;
+            box-shadow: none;
+        }
+        
+        .es-carousel {
+            background: transparent;
+        }
+        
+        .es-carousel ul li a {
+            border-style: none;
+        }
+        
+        .rg-image-wrapper {
+            background: transparent;
+            height: 381px;
+        }
+        
+        .rg-image {
+            display: flex;
+            width: 50%;
+            min-height: 326px;
+        }
+        
+        .es-carousel>ul li {
+            margin-right: 13px !important;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        .rg-image img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .es-carousel span {
+            color: #3c3c3b;
+            font-weight: bold;
+        }
+        
+        .es-nav span {
+            top: 45px;
+        }
+    </style>
 </head>
 
-<style>
-    .rg-caption .description {
-        display: inline-block;
-    }
-    
-    .home_page_banner {
-        background: #fff;
-    }
-    
-    .es-carousel-wrapper {
-        display: none;
-    }
-    
-    .es-carousel-wrapper {
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    .es-carousel {
-        background: transparent;
-    }
-    
-    .es-carousel ul li a {
-        border-style: none;
-    }
-    
-    .rg-image-wrapper {
-        background: transparent;
-    }
-    
-    .rg-image {
-        display: flex;
-        width: 50%;
-    }
-    
-    .es-carousel>ul li {
-        margin-right: 15px !important;
-    }
-    
-    .clearfix {
-        clear: both;
-    }
-    
-    .rg-image img {
-        width: 100%;
-    }
-</style>
-
 <body class="text-center">
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-ontop">
-        <div class="container-fluid">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item mx-1">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="toogle_btn">
-            <a id="show-hidden-menu" class="nav-icon"><span></span></a>
-        </div>
-        <div class="toogle_btn">
-            <a id="hidden-menu" class="nav-icon-close"><span></span></a>
-        </div>
-    </nav>
-    <div class="align-items-center home_page_banner banner_home h-100 home_intro">
-        <div class="desc" id="thingtohide" style="display: block;">
-            <div class="container">
-                <div class="row" style="padding-top:10px;">
-                    <div class="offset-md-2 col-md-8">
-                        <div class="desc">
-                            <h1 class="1pb-2 mb-3 text-uppercase" style="font-weight: normal">
-                                planet first alliance
-                            </h1>
-                            <p class="lead">
-                                <b>Enabling a new global peep-to-peer economy of human and
-                    planet centric technologies and solutions, guided by
-                    universal principles, by 2030</b
-                  >
-                </p>
-
-                <div class="content">
-                  <div id="rg-gallery" class="rg-gallery">
-                    <div class="rg-thumbs my-5">
-                      <!-- Elastislide Carousel Thumbnail Viewer -->
-                      <div class="es-carousel-wrapper">
-                        <div class="es-carousel">
-                          <ul>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/earth.png"
-                                  data-large="img/earth.png"
-                                  alt="image01"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/small-planet.png"
-                                  data-large="img/small-planet.png"
-                                  alt="image02"
-                                />
-                                <div class="data d-none">
-                                  <h3>header</h3>
-                                  <p>content</p>
-                                  <a class="link" href="#">URL</a>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-ontop">
+    <div class="container-fluid">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="toogle_btn">
+      <a id="show-hidden-menu" class="nav-icon"><span></span></a>
+    </div>
+    <div class="toogle_btn">
+      <a id="hidden-menu" class="nav-icon-close"><span></span></a>
+    </div>
+  </nav>
+  <div class="align-items-center home_page_banner banner_home h-100 home_intro">
+    <div class="desc" id="thingtohide" style="display: block;">
+      <div class="container">
+        <div class="row" style="padding-top:10px;">
+          <div class="offset-md-2 col-md-8">
+            <div class="desc">
+              <h1 class="1pb-2 mb-3 text-uppercase" style="font-weight: normal"> planet first alliance </h1>
+              <p class="lead">
+                <b>We envision a world where collaboration eclipses competition, and where together as a global community we unite to learn, develop and equally distribute the best technologies, solutions and knowledge to achieve global peace, harmony and sustainability. </b>
+              </p>
+              <div class="content">
+                <div id="rg-gallery" class="rg-gallery">
+                  <div class="rg-thumbs my-5">
+                    <!-- Elastislide Carousel Thumbnail Viewer -->
+                    <div class="es-carousel-wrapper">
+                      <div class="es-carousel">
+                        <ul>
+                          <li class="d-none">
+                            <a href="#"><img src="img/earth.png" data-large="img/earth.png" alt="image01">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image02">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
                               <a href="#">
-                                <img
-                                  src="img/earth.png"
-                                  data-large="img/earth.png"
-                                  alt="image03"
-                                />
-                                <div class="data d-none">
-                                  <h3>another header</h3>
-                                  <p>another content</p>
-                                  <a class="link" href="#">another URL</a>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/small-planet.png"
-                                  data-large="img/small-planet.png"
-                                  alt="image04"
-                                  data-description="My spirits to attend this double voice accorded"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/earth.png"
-                                  data-large="img/earth.png"
-                                  alt="image05"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/small-planet.png"
-                                  data-large="img/small-planet.png"
-                                  alt="image06"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/earth.png"
-                                  data-large="img/earth.png"
-                                  alt="image07"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/small-planet.png"
-                                  data-large="img/small-planet.png"
-                                  alt="image08"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/earth.png"
-                                  data-large="img/earth.png"
-                                  alt="image09"
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><img
-                                  src="img/small-planet.png"
-                                  data-large="img/small-planet.png"
-                                  alt="image10"
-                              /></a>
-                            </li>
-                          </ul>
-                        </div>
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                                <p class="my-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/small-planet.png" data-large="img/small-planet.png" alt="image03">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image04" data-description="My spirits to attend this double voice accorded">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image05">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image06">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image07">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image08">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image09">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image10">
+                              <span class="text-uppercase">project name</span>
+                            </a>
+                            <div class="data d-none">
+                              <a href="#">
+                                <h3>header</h3>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo vero ad ipsum aliquam saepe explicabo fugit <br> quidem quas necessitatibus similique magnam blanditiis quo fugiat alias cum accusamus amet quaerat? </p>
+                              </a><a class="link" href="#">URL</a>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                      <!-- End Elastislide Carousel Thumbnail Viewer -->
                     </div>
-                    <!-- rg-thumbs -->
+                    <!-- End Elastislide Carousel Thumbnail Viewer -->
                   </div>
-                  <!-- rg-gallery -->
+                  <!-- rg-thumbs -->
                 </div>
-                <!-- content -->
+                <!-- rg-gallery -->
               </div>
+              <!-- content -->
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- THE MOST ADVANCED INTERNET NETWORK Sec -->
+  <section class="advanced_internet py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="head_div">
+            <h2 class="my-4" style="font-weight: normal">Header<br></h2>
+            <p class="text-dark lead text-left" contenteditable="true"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id ab optio ut porro nulla numquam quos corrupti, illo beatae ratione suscipit sunt rem exercitationem velit perferendis dolore repudiandae. </p>
+            <p class="text-dark lead text-left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam esse, animi sit, quam ducimus reiciendis voluptas eveniet accusantium quo ipsam in non dolorem atque, temporibus velit. Vel, aspernatur ratione? </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a class="btn btn-secondary text-uppercase" href="http://wiki.threefold.io/#/3bot/readme" target="_blank">link<br></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- THE MOST ADVANCED INTERNET NETWORK Sec -->
+  <section class="advanced_internet py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="head_div">
+            <h2 class="my-5" style="font-weight: normal"> HOSTED ON THREEFOLD NETWORK <br>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>EQUAL</h3>
+              <p class="text-dark my-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem provident autem nobis eaque consequatur temporibus maxime culpa doloremque atque! Debitis possimus reprehenderit suscipit. Quaerat error veritatis voluptas magni cupiditate. </p>
+            </div>
+            <div class="col-md-4">
+              <h3>SUSTAINABLE</h3>
+              <p class="text-dark my-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic blanditiis accusantium cupiditate, dolor nostrum itaque fugiat fugit vitae inventore temporibus nemo, culpa similique quia obcaecati atque repellat at ea? </p>
+            </div>
+            <div class="col-md-4">
+              <h3>PERFORMANCE</h3>
+              <p class="text-dark my-4"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quas dignissimos at quae nobis ut quam laboriosam consectetur. Officiis officia vel totam suscipit optio asperiores voluptatum sapiente, laudantium beatae consequuntur. </p>
+            </div>
+          </div>
+          <a class="btn btn-secondary text-uppercase" href="http://wiki.threefold.io/#/3bot/readme" target="_blank">link<br></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advanced_internet py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="head_div">
+            <h2 class="my-5" style="font-weight: normal"> Call to action<br>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 text-left">
+              <h3>FOR BUSINESSES</h3>
+              <p class="text-dark my-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem provident autem nobis eaque consequatur temporibus maxime culpa doloremque atque! Debitis possimus reprehenderit suscipit. Quaerat error veritatis voluptas magni cupiditate. </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-left">FOR PEOPLE</h3>
+              <p class="text-dark my-4 text-left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic blanditiis accusantium cupiditate, dolor nostrum itaque fugiat fugit vitae inventore temporibus nemo, culpa similique quia obcaecati atque repellat at ea? </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script src="js/common.js "></script>
+  <script src="js/map_nodes.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
+  <!-- Script: Smooth scrolling between anchors in a same page -->
+  <script src="js/smooth-scroll.js "></script>
+  <script>
+    $(function() {
+      var winH = $(window).innerHeight();
+      var navH = $(".navbar ").innerHeight();
+      $(".home_page_banner ").height(winH + navH);
+    });
+  </script>
+</body>
 
-    <!-- JavaScript dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="js/gallery.js"></script>
-    <script src="js/common.js "></script>
-    <script src="js/map_nodes.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
-    <!-- Script: Smooth scrolling between anchors in a same page -->
-    <script src="js/smooth-scroll.js "></script>
-    <script>
-      $(function() {
-        var winH = $(window).innerHeight();
-        var navH = $(".navbar ").innerHeight();
-        $(".home_page_banner ").height(winH + navH);
-      });
-    </script>
-  </body>
 </html>
