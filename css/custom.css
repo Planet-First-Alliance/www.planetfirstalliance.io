@@ -1812,8 +1812,9 @@ a:hover {
 .strong_history .btn {
     border-radius: 5px;
 }
-.btn-secondary {
+.btn-secondary,.btn-warning {
     border-radius: 5px;
+
 }
 .home_why {
     background-image: url(../assets/home/home_why_bg.png);
