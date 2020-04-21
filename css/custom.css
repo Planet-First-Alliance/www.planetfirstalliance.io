@@ -1948,6 +1948,13 @@ a:hover {
 .lead {
     color: #4e4d4d;
 }
+.desc p{
+  font-size: 15px;
+}
+.description h3{
+  font-size:26px
+}
+
 .three_pillars {
     padding-top: 20rem;
     position: relative;
