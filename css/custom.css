@@ -1954,6 +1954,9 @@ a:hover {
 .description h3{
   font-size:26px
 }
+.description .btn {
+  font-size: 13px;
+}
 
 .three_pillars {
     padding-top: 20rem;

@@ -186,8 +186,8 @@ $(function() {
                 var description =
                     '<h3>' + header + '</h3>' +
                     '<p>' + content + '</p>' +
-                    '<a class="btn btn-secondary mx-2" href="' + linkURL + '">' + linkTxt + '</a>' +
-                    '<a class="btn btn-secondary" href="' + anoLinkURL + '">' + anoLinkTxt + '</a>';
+                    '<a class="btn btn-secondary text-uppercase mx-2" href="' + linkURL + '">' + linkTxt + '</a>' +
+                    '<a class="btn btn-warning text-uppercase" href="' + anoLinkURL + '">' + anoLinkTxt + '</a>';
 
                 $('<img/>').load(function() {
                     $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
@@ -226,7 +226,7 @@ $(function() {
 
     /*
     Example to add more items to the gallery:
-	
+
     var $new  = $('<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>');
     Gallery.addItems( $new );
     */
