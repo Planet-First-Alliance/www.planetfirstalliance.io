@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS dependencies -->
@@ -12,153 +13,132 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/map_points.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet" />
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
     <script src="js/navbar-ontop.js"></script>
     <script src="js/animate-in.js"></script>
     <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
-      <div class="rg-image-wrapper">
-          <div class="rg-image"></div>
-          <div class="rg-caption-wrapper">
-              <div class="rg-caption" style="display:none;"></div>
-          </div>
-      </div>
-      <div class="clearfix"></div>
+        <div class="rg-image-wrapper">
+            <div class="rg-image"></div>
+            <div class="rg-caption-wrapper">
+                <div class="rg-caption" style="display:none;"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
     </script>
     <style>
-      .rg-caption .description {
-        display: inline-block;
-        width: 50%;
-      }
-
-      .home_page_banner {
-        background: #fcfcfc;
-      }
-
-      .es-carousel-wrapper {
-        display: none;
-      }
-
-      .es-carousel-wrapper {
-        background: transparent;
-        box-shadow: none;
-        padding: 0 27px;
-      }
-
-      .es-carousel {
-        background: transparent;
-      }
-
-      .es-carousel ul li a {
-        border-style: none;
-      }
-
-      .rg-image-wrapper {
-        background: transparent;
-        height: 381px;
-        padding: 0 30px;
-      }
-
-      .rg-image {
-        display: flex;
-        width: 50%;
-        min-height: 326px;
-      }
-
-      .es-carousel > ul li {
-        margin: 0 15px !important;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      .rg-image img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .es-carousel span {
-        color: #3c3c3b;
-        font-weight: bold;
-      }
-
-      .es-nav span {
-        display: none !important;
-        top: 65px;
-      }
-
-      .es-carousel ul li a img {
-        border-radius: 50%;
-        margin-bottom: 20px;
-      }
-
-      .es-carousel ul li a img:hover,
-      .selected img {
-        box-shadow: 0 0 10px 1px #1b499b;
-      }
-
-      .es-carousel {
-        padding: 20px;
-      }
+        .rg-caption .description {
+            display: inline-block;
+            width: 50%;
+        }
+        
+        .home_page_banner {
+            background: #fcfcfc;
+        }
+        
+        .es-carousel-wrapper {
+            display: none;
+        }
+        
+        .es-carousel-wrapper {
+            background: transparent;
+            box-shadow: none;
+            padding: 0 27px;
+        }
+        
+        .es-carousel {
+            background: transparent;
+        }
+        
+        .es-carousel ul li a {
+            border-style: none;
+        }
+        
+        .rg-image-wrapper {
+            background: transparent;
+            height: 381px;
+            padding: 0 30px;
+        }
+        
+        .rg-image {
+            display: flex;
+            width: 50%;
+            min-height: 326px;
+        }
+        
+        .es-carousel>ul li {
+            margin: 0 15px !important;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        .rg-image img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .es-carousel span {
+            color: #3c3c3b;
+            font-weight: bold;
+        }
+        
+        .es-nav span {
+            display: none !important;
+            top: 65px;
+        }
+        
+        .es-carousel ul li a img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .es-carousel ul li a img:hover,
+        .selected img {
+            box-shadow: 0 0 10px 1px #1b499b;
+        }
+        
+        .es-carousel {
+            padding: 20px;
+        }
     </style>
-  </head>
+</head>
 
-  <body class="text-center">
+<body class="text-center">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-ontop">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar2SupportedContent"
-          aria-controls="navbar2SupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <div class="container-fluid">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbar2SupportedContent"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="toogle_btn">
-        <a id="show-hidden-menu" class="nav-icon"><span></span></a>
-      </div>
-      <div class="toogle_btn">
-        <a id="hidden-menu" class="nav-icon-close"><span></span></a>
-      </div>
+        <div class="toogle_btn">
+            <a id="show-hidden-menu" class="nav-icon"><span></span></a>
+        </div>
+        <div class="toogle_btn">
+            <a id="hidden-menu" class="nav-icon-close"><span></span></a>
+        </div>
     </nav>
-    <div
-      class="align-items-center home_page_banner banner_home h-100 home_intro"
-    >
-      <div class="desc" id="thingtohide" style="display: block;">
-        <div class="container">
-          <div class="row">
-            <img class="m-auto" src="img/planet-title.png" alt="" />
+    <div class="align-items-center home_page_banner banner_home h-100 home_intro">
+        <div class="desc" id="thingtohide" style="display: block;">
+            <div class="container">
+                <div class="row">
+                    <img class="m-auto" src="img/planet-title.png" alt="" />
 
-            <div class="offset-md-2 col-md-8">
-              <div class="desc">
-                <p class="lead">
-                  <b
-                    >Enabling a new global peer-to-peer economy of human and
-                    planet centric solutions guided by universal principles.
-                  </b>
+                    <div class="offset-md-2 col-md-8">
+                        <div class="desc">
+                            <p class="lead">
+                                <b>Enabling a new global peer-to-peer economy of human and
+                    planet centric solutions guided by universal principles.</b
+                  >
                 </p>
                 <div class="content" id="mycarousel">
                   <div id="rg-gallery" class="rg-gallery">
@@ -174,7 +154,7 @@
                                   data-large="img/earth.png"
                                   alt="image01"
                                 />
-                                <span class="text-uppercase">project name</span>
+                                <span class="text-uppercase"></span>
                               </a>
                             </li>
                             <li>
@@ -184,28 +164,27 @@
                                   data-large="img/small-planet.png"
                                   alt="image02"
                                 />
-                                <span class="text-uppercase">project name</span>
+                                <span class="text-uppercase"
+                                  >ThreeFold Network</span
+                                >
                               </a>
                               <div class="data d-none">
                                 <a href="#">
-                                  <h3>header</h3>
-                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Reprehenderit illo vero ad
-                                    ipsum aliquam saepe explicabo fugit <br />
-                                    quidem quas necessitatibus similique magnam
-                                    blanditiis quo fugiat alias cum accusamus
-                                    amet quaerat?
-                                  </p>
+                                  <h3>ThreeFold Network</h3>
                                   <p class="my-2">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Reprehenderit illo vero ad
-                                    ipsum aliquam saepe explicabo fugit <br />
-                                    quidem quas necessitatibus similique magnam
-                                    blanditiis quo fugiat alias cum accusamus
-                                    amet quaerat?
-                                  </p> </a
-                                ><a class="link" href="#">URL</a>
+                                    A true peer-to-peer Internet that empowers
+                                    freedom, equality and sustainability.<br/><br/>
+                                    The ThreeFold Network reworked the whole
+                                    Internet infrastructure to enable a true
+                                    peer-to-peer Internet network - making it
+                                    the most private, secure, efficient,
+                                    sustainable, affordable internet and cloud
+                                    network in the world. Their solutions
+                                    empower people responsibly while reducing
+                                    energy consumption by 90% as compared to
+                                    centralised Internet and cloud providers.
+                                  </p></a>
+                                  <!-- <a class="link" href="#">URL</a> -->
                               </div>
                             </li>
                             <li>
