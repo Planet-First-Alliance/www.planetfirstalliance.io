@@ -179,12 +179,15 @@ $(function() {
                     header = $desc.find('h3').text(),
                     content = $desc.find('p').html(),
                     linkURL = $desc.find('a.link').attr('href'),
-                    linkTxt = $desc.find('a.link').text()
+                    linkTxt = $desc.find('a.link').text(),
+                    anoLinkURL = $desc.find('a.anoLink').attr('href'),
+                    anoLinkTxt = $desc.find('a.anoLink').text()
 
                 var description =
                     '<h3>' + header + '</h3>' +
                     '<p>' + content + '</p>' +
-                    '<a class="btn btn-secondary" href="' + linkURL + '">' + linkTxt + '</a>';
+                    '<a class="btn btn-secondary mx-2" href="' + linkURL + '">' + linkTxt + '</a>' +
+                    '<a class="btn btn-secondary" href="' + anoLinkURL + '">' + anoLinkTxt + '</a>';
 
                 $('<img/>').load(function() {
                     $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');

@@ -2,23 +2,24 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSS dependencies -->
-  <link rel="stylesheet" type="text/css" href="css/demo.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/elastislide.css">
-  <link rel="stylesheet" href="theme.css" type="text/css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/map_points.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
-  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="js/navbar-ontop.js"></script>
-  <script src="js/animate-in.js"></script>
-  <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl"> <div class="rg-image-wrapper">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css">
+    <link rel="stylesheet" href="theme.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map_points.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+    <script src="js/navbar-ontop.js"></script>
+    <script src="js/animate-in.js"></script>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+        <div class="rg-image-wrapper">
             <div class="rg-image"></div>
             <div class="rg-caption-wrapper">
                 <div class="rg-caption" style="display:none;"></div>
@@ -26,78 +27,79 @@
         </div>
         <div class="clearfix"></div>
     </script>
-  <style> .rg-caption .description {
+    <style>
+        .rg-caption .description {
             display: inline-block;
             width: 50%;
         }
-
+        
         .home_page_banner {
             background: #fcfcfc;
         }
-
+        
         .es-carousel-wrapper {
             display: none;
         }
-
+        
         .es-carousel-wrapper {
             background: transparent;
             box-shadow: none;
             padding: 0 27px;
         }
-
+        
         .es-carousel {
             background: transparent;
         }
-
+        
         .es-carousel ul li a {
             border-style: none;
         }
-
+        
         .rg-image-wrapper {
             background: transparent;
             height: 381px;
             padding: 0 30px;
         }
-
+        
         .rg-image {
             display: flex;
             width: 50%;
             min-height: 326px;
         }
-
+        
         .es-carousel>ul li {
             margin: 0 10px !important;
         }
-
+        
         .clearfix {
             clear: both;
         }
-
+        
         .rg-image img {
             width: 100%;
             height: 100%;
         }
-
+        
         .es-carousel span {
             color: #3c3c3b;
             font-weight: bold;
         }
-
+        
         .es-nav span {
             display: none !important;
             top: 65px;
         }
-
+        
         .es-carousel ul li a img {
             border-radius: 50%;
             margin-bottom: 20px;
         }
-
+        
         .es-carousel ul li a img:hover,
         .selected img {
             box-shadow: 0 0 10px 1px #1b499b;
         }
-
+        
         .es-carousel {
             padding: 20px;
         }
@@ -105,7 +107,7 @@
 </head>
 
 <body class="text-center">
-  <!-- <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-ontop">
+    <!-- <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-ontop">
         <div class="container-fluid">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -125,164 +127,184 @@
             <a id="hidden-menu" class="nav-icon-close"><span></span></a>
         </div>
     </nav> -->
-  <div class="align-items-center home_page_banner banner_home h-100 home_intro">
-    <div class="desc" id="thingtohide" style="display: block;">
-      <div class="container">
-        <div class="row">
-          <img class="m-auto" src="img/planet-title.png" alt="">
-          <div class="offset-md-2 col-md-8">
-            <div class="desc">
-              <p class="lead" style="margin-bottom: 3rem;">
-                <b>Enabling a new global peer-to-peer economy of human and planet centric solutions guided by universal principles.</b>
-              </p>
-              <div class="content" id="mycarousel">
-                <div id="rg-gallery" class="rg-gallery">
-                  <div class="rg-thumbs my-2">
-                    <!-- Elastislide Carousel Thumbnail Viewer -->
-                    <div class="es-carousel-wrapper">
-                      <div class="es-carousel">
-                        <ul>
-                          <li>
-                            <a href="#"><img src="img/earth.png" data-large="img/earth.png" alt="image01">
-                              <span class="text-uppercase">Earth</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image02">
-                              <span class="text-uppercase">ThreeFold Network</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>ThreeFold Network</h3>
-                                <p class="my-2"> A true peer-to-peer Internet that empowers freedom, equality and sustainability.<br><br> The ThreeFold Network reworked the whole Internet infrastructure to enable a true peer-to-peer Internet network - making it the most private, secure, efficient, sustainable, affordable internet and cloud network in the world. Their solutions empower people responsibly while reducing energy consumption by 90% as compared to centralised Internet and cloud providers. </p>
-                              </a>
-                              <a class="link" target="_blank" href="http://www.threefold.io/">More info</a>
+    <div class="align-items-center home_page_banner banner_home h-100 home_intro">
+        <div class="desc" id="thingtohide" style="display: block;">
+            <div class="container">
+                <div class="row">
+                    <img class="m-auto" src="img/planet-title.png" alt="">
+                    <div class="offset-md-2 col-md-8">
+                        <div class="desc">
+                            <p class="lead" style="margin-bottom: 3rem;">
+                                <b>Enabling a new global peer-to-peer economy of human and planet centric solutions guided by universal principles.</b>
+                            </p>
+                            <div class="content" id="mycarousel">
+                                <div id="rg-gallery" class="rg-gallery">
+                                    <div class="rg-thumbs my-2">
+                                        <!-- Elastislide Carousel Thumbnail Viewer -->
+                                        <div class="es-carousel-wrapper">
+                                            <div class="es-carousel">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="img/earth.png" data-large="img/earth.png" alt="image01">
+                                                            <span class="text-uppercase">Earth</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image02">
+                                                            <span class="text-uppercase">ThreeFold Network</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>ThreeFold Network</h3>
+                                                                <p class="my-2"> A true peer-to-peer Internet that empowers freedom, equality and sustainability.<br><br> The ThreeFold Network reworked the whole Internet infrastructure to enable a true peer-to-peer Internet
+                                                                    network - making it the most private, secure, efficient, sustainable, affordable internet and cloud network in the world. Their solutions empower people responsibly while reducing energy
+                                                                    consumption by 90% as compared to centralised Internet and cloud providers. </p>
+                                                            </a>
+                                                            <a class="link" target="_blank" href="http://www.threefold.io/">More info</a>
+                                                            <a class="anoLink" target="_blank" href="http://www.threefold.io/">More info</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="img/small-planet.png" data-large="img/small-planet.png" alt="image03">
+                                                            <span class="text-uppercase">3Bot</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>3Bot</h3>
+                                                                <p> Your digital twin that provides full control, ownership and security over your data. <br><br> 3Bot is a revolutionary digital avatar that will execute your digital needs. It is an unprecedented
+                                                                    leap in digital privacy and comes with all the functionalities you need to interact and exchange on the new Internet. It is your single entry point for all the experiences on the new
+                                                                    Internet putting you in the center and control over your experiences. </p>
+                                                            </a>
+                                                            <a class="link" target="_blank" href="https://3bot.org/">More info</a>
+                                                            <a class="anoLink" target="_blank" href="">Another info</a>
+
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image04" data-description="My spirits to attend this double voice accorded">
+                                                            <span class="text-uppercase">Seeds</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>Seeds</h3>
+                                                                <p> A payment platform and financial ecosystem to empower humanity and heal our planet. <br><br> It's a digital currency and financial system that serves, rewards and finances the people and
+                                                                    organisations committed to creating a healthier and more equitable planet. Crafted from systems that reflect the latest in financial, social and political innovation, SEEDS is the web
+                                                                    that connects and nurtures a globally regenerative culture. </p>
+                                                            </a>
+                                                            <a class="link" href="#">URL</a>
+                                                            <a class="anoLink" target="_blank" href="">Another info</a>
+
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image05">
+                                                            <span class="text-uppercase">Beliive</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>Beliive</h3>
+                                                                <p> Live experiences and share your skills using time as only currency. <br>
+                                                                    <br> A platform where everyone can be a part of a global community that together is using collaboration to receive services and learn new things, without money involved. </p>
+                                                            </a>
+                                                            <a class="link" href="#">URL</a>
+                                                            <a class="anoLink" target="_blank" href="">Another info</a>
+
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image06">
+                                                            <span class="text-uppercase">Artheon</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>Artheon</h3>
+                                                                <p> Explore fine art and culture from all around the world in virtual reality. <br><br> The Artheon VR Museum is and always will be a free educational platform offering immersive, next level
+                                                                    interaction with objects of cultural heritage. This allows deeper and more detailed perception and study ensuring access to objects of art and culture for children, youth and all who
+                                                                    find it difficult or impossible to take a journey to art exhibitions. </p>
+                                                            </a>
+                                                            <a class="link" target="_blank" href="https://artheon.co/">More info</a>
+                                                            <a class="anoLink" target="_blank" href="">Another info</a>
+
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image06">
+                                                            <span class="text-uppercase">GoldFlow</span>
+                                                        </a>
+                                                        <div class="data d-none">
+                                                            <a href="#">
+                                                                <h3>GoldFlow</h3>
+                                                                <p> GoldFlow implements blockchain technology and decentralized infrastructure to digitize vaulted gold enabling users to store and transact from their mobile digital wallet. GoldFlow token is
+                                                                    a digital asset backed by physical gold, each GFT token represents 1 gram of 99.99% Gold reserved in Sequoyah vaults. </p>
+                                                            </a>
+                                                            <a class="link" href="#">URL</a>
+                                                            <a class="anoLink" target="_blank" href="">Another info</a>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End Elastislide Carousel Thumbnail Viewer -->
+                                    </div>
+                                    <!-- rg-thumbs -->
+                                </div>
+                                <!-- rg-gallery -->
                             </div>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img src="img/small-planet.png" data-large="img/small-planet.png" alt="image03">
-                              <span class="text-uppercase">3Bot</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>3Bot</h3>
-                                <p> Your digital twin that provides full control, ownership and security over your data. <br><br> 3Bot is a revolutionary digital avatar that will execute your digital needs. It is an unprecedented leap in digital privacy and comes with all the functionalities you need to interact and exchange on the new Internet. It is your single entry point for all the experiences on the new Internet putting you in the center and control over your experiences. </p>
-                              </a>
-                              <a class="link" target="_blank" href="https://3bot.org/">More info</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image04" data-description="My spirits to attend this double voice accorded">
-                              <span class="text-uppercase">Seeds</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>Seeds</h3>
-                                <p> A payment platform and financial ecosystem to empower humanity and heal our planet. <br><br> It's a digital currency and financial system that serves, rewards and finances the people and organisations committed to creating a healthier and more equitable planet. Crafted from systems that reflect the latest in financial, social and political innovation, SEEDS is the web that connects and nurtures a globally regenerative culture. </p>
-                              </a>
-                              <a class="link" href="#">URL</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image05">
-                              <span class="text-uppercase">Beliive</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>Beliive</h3>
-                                <p> Live experiences and share your skills using time as only currency. <br>
-                                  <br> A platform where everyone can be a part of a global community that together is using collaboration to receive services and learn new things, without money involved. </p>
-                              </a>
-                              <a class="link" href="#">URL</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image06">
-                              <span class="text-uppercase">Artheon</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>Artheon</h3>
-                                <p> Explore fine art and culture from all around the world in virtual reality. <br><br> The Artheon VR Museum is and always will be a free educational platform offering immersive, next level interaction with objects of cultural heritage. This allows deeper and more detailed perception and study ensuring access to objects of art and culture for children, youth and all who find it difficult or impossible to take a journey to art exhibitions. </p>
-                              </a>
-                              <a class="link" target="_blank" href="https://artheon.co/">More info</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><img src="img/small-planet.png" data-large="img/small-planet.png" alt="image06">
-                              <span class="text-uppercase">GoldFlow</span>
-                            </a>
-                            <div class="data d-none">
-                              <a href="#">
-                                <h3>GoldFlow</h3>
-                                <p> GoldFlow implements blockchain technology and decentralized infrastructure to digitize vaulted gold enabling users to store and transact from their mobile digital wallet. GoldFlow token is a digital asset backed by physical gold, each GFT token represents 1 gram of 99.99% Gold reserved in Sequoyah vaults. </p>
-                              </a>
-                              <a class="link" href="#">URL</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+                            <!-- content -->
+                        </div>
                     </div>
-                    <!-- End Elastislide Carousel Thumbnail Viewer -->
-                  </div>
-                  <!-- rg-thumbs -->
                 </div>
-                <!-- rg-gallery -->
-              </div>
-              <!-- content -->
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="clear-fix"></div>
-  <!-- THE MOST ADVANCED INTERNET NETWORK Sec -->
-  <section class="advanced_internet py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="head_div">
-            <h3 class="my-4" style="font-weight: normal;font-size:45px"> FreeFlow Nation’s vision of a decentralized peer-to-peer economy<br>
-            </h3>
-            <p class="text-dark lead text-center">
-              <b>We believe in the power of collaboration. With a collective approach, Planet First Alliance includes a diverse range of people and organizations, and together we build the best technologies and solutions to power positive change and shape a better world.</b>
-            </p>
-            <p class="text-dark lead pb-3 text-center">
-              <b> We align with FreeFlow Nation's vision and manifesto to reduce dependencies on – and eliminate barriers created by – flawed and biased centralized systems, and put people back in control of their lives. Together we are building an equal, sustainable foundation for true peer to peer economy.</b>
-            </p>
-          </div>
+    <div class="clear-fix"></div>
+    <!-- THE MOST ADVANCED INTERNET NETWORK Sec -->
+    <section class="advanced_internet py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="head_div">
+                        <h3 class="my-4" style="font-weight: normal;font-size:45px"> FreeFlow Nation’s vision of a decentralized peer-to-peer economy<br>
+                        </h3>
+                        <p class="text-dark lead text-center">
+                            <b>We believe in the power of collaboration. With a collective approach, Planet First Alliance includes a diverse range of people and organizations, and together we build the best technologies and solutions to power positive change and shape a better world.</b>
+                        </p>
+                        <p class="text-dark lead pb-3 text-center">
+                            <b> We align with FreeFlow Nation's vision and manifesto to reduce dependencies on – and eliminate barriers created by – flawed and biased centralized systems, and put people back in control of their lives. Together we are building an equal, sustainable foundation for true peer to peer economy.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn btn-secondary text-uppercase mx-2" href="https://freeflownation.org/" target="_blank">Manifesto<br></a>
+                    <a class="btn text-uppercase mx-2 btn-warning" href="mailto:kristine@threefold.io">Join The Alliance<br></a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <a class="btn btn-secondary text-uppercase mx-2" href="https://freeflownation.org/" target="_blank">Manifesto<br></a>
-          <a class="btn text-uppercase mx-2 btn-warning" href="mailto:kristine@threefold.io">Join The Alliance<br></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- JavaScript dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-  <script type="text/javascript" src="js/gallery.js"></script>
-  <script src="js/common.js "></script>
-  <script src="js/map_nodes.js "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
-  <!-- Script: Smooth scrolling between anchors in a same page -->
-  <script src="js/smooth-scroll.js "></script>
-  <script>
-    $(function() {
-      var winH = $(window).innerHeight();
-      var navH = $(".navbar ").innerHeight();
-      $(".home_page_banner ").height(winH + navH);
-    });
-  </script>
+    </section>
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script src="js/common.js "></script>
+    <script src="js/map_nodes.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
+    <!-- Script: Smooth scrolling between anchors in a same page -->
+    <script src="js/smooth-scroll.js "></script>
+    <script>
+        $(function() {
+            var winH = $(window).innerHeight();
+            var navH = $(".navbar ").innerHeight();
+            $(".home_page_banner ").height(winH + navH);
+        });
+    </script>
 </body>
 
 </html>
