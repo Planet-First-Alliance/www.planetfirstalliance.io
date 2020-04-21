@@ -183,8 +183,8 @@ $(function() {
 
                 var description =
                     '<h3>' + header + '</h3>' +
-                    '<p>' + content + '</p>';
-                // '<a class="btn btn-secondary" href="' + linkURL + '">' + linkTxt + '</a>';
+                    '<p>' + content + '</p>' +
+                    '<a class="btn btn-secondary" href="' + linkURL + '">' + linkTxt + '</a>';
 
                 $('<img/>').load(function() {
                     $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
